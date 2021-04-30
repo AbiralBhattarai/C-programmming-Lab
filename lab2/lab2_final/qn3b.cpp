@@ -8,5 +8,5 @@ int main(){
 		a = a-2;
 	}
 	rem = a;
-	{(rem==0)?printf("even"):printf("odd");}
+	{(rem==0)? printf("even"):printf("odd");}
 }
