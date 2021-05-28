@@ -1,13 +1,13 @@
 #include<stdio.h>
 #include<conio.h>
-int count = 0;
 int main(){
-	int low,high,i,num,j;
+	int low,high,i,num,j,count;
 	printf("enter starting number: ");
 	scanf("%d",&low);
 	printf("enter ending number: ");
 	scanf("%d",&high);
-	for(i = low;(i >= low)&&(i <= high); i++){
+	for(i = low;(i <= high); i++){
+			count=0;
 			num = i ;
 			for(j = 1;j<=num;j++){
 				if(num % j == 0){
@@ -15,7 +15,7 @@ int main(){
 				};
 			};
 			if(count == 2){
-				printf("%d",num);
+				printf("%d\t",num);
 			};
 	}
 }

@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 int main(){
-	int a,b,min,hcf,i;
+	int a,b,min,hcf,i,lcm;
 	printf("enter a number: ");
 	scanf("%d",&a);
 	printf("enter a number: ");
@@ -17,7 +17,8 @@ int main(){
 		}
 	}
 	printf("\n hcf = %d ",hcf);
-	int lcm = a*b / hcf;
+	lcm = a*b / hcf;
 	printf("\n lcm = %d",lcm);
+	getch();
 	return 0;	
 }
